@@ -1,19 +1,37 @@
 #include "sculptor.cpp"
 #include <iostream>
 
-int main () {
-      Sculptor s(10, 10, 10);
+int main() {
+    // Dimensão total do espaço
+    Sculptor flor(50, 50, 50);
 
-    // Defina a cor azul e a opacidade total
-    s.setColor(0.0, 0.0, 1.0, 1.0);
+    // Vaso
+    flor.setColor(0.65, 0.32, 0.17, 1.0); // Marrom
+    flor.putBox(20, 30, 0, 10, 0, 10);   // Base do vaso
+    flor.putBox(21, 29, 10, 20, 1, 9);  // Parte superior do vaso
 
-    // Adicione um cubo
-    s.putBox(2, 7, 2, 7, 2, 7); // Definindo as coordenadas mínima e máxima do cubo
+    // Caule
+    flor.setColor(0.0, 1.0, 0.0, 1.0); // Verde
+    flor.putBox(24, 26, 20, 40, 4, 6); // Caule
 
-    // Salve o modelo em um arquivo OFF
-    s.writeOFF("cubo_azul.off");
+    // Folhas
+    flor.setColor(0.0, 0.8, 0.0, 1.0); // Verde escuro
+    flor.putBox(20, 24, 30, 32, 2, 4); // Folha esquerda
+    flor.putBox(26, 30, 30, 32, 6, 8); // Folha direita
 
-    std::cout << "Cubo azul criado e salvo como cubo_azul.off" << std::endl;
+    // Pétalas
+    flor.setColor(1.0, 0.0, 0.0, 1.0); // Vermelho
+    flor.putSphere(23, 42, 5, 4); // Pétala esquerda
+    flor.putSphere(27, 42, 5, 4); // Pétala direita
+    flor.putSphere(25, 42, 3, 4); // Pétala inferior
+    flor.putSphere(25, 42, 7, 4); // Pétala superior
+
+    // Centro da flor
+    flor.setColor(1.0, 1.0, 0.0, 1.0); // Amarelo
+    flor.putSphere(25, 42, 5, 2); // Centro
+
+    // Exportar para OFF
+    flor.writeOFF("flor.off");
 
     return 0;
 }
