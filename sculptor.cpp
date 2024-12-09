@@ -168,7 +168,7 @@ void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius){
     putEllipsoid(xcenter,ycenter,zcenter,radius,radius,radius);
 }
 
-//defini��o da fun��o cutSphere
+//definicao da funcao cutSphere
 void Sculptor::cutSphere(int xcenter, int ycenter, int zcenter, int radius){
 
     // desativa a esfera atraves da funcao cutEllipsoid, com o raio unico
