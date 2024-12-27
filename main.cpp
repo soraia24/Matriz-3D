@@ -36,7 +36,7 @@ flor.cutVoxel(30, 20, 4);
 flor.setColor(1.0, 0.0, 0.0, 1.0); // Vermelho
 flor.putSphere(20, 36, 5, 4); // Pétala esquerda
 flor.putSphere(30, 36, 5, 4); // Pétala direita
-flor.putSphere(25, 40, 3, 4); // Pétala inferior
+flor.putSphere(25, 40, 5, 4); // Pétala inferior
 flor.putSphere(25, 31, 5, 4); // Pétala superior
 
 

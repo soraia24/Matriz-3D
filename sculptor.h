@@ -1,17 +1,21 @@
 #ifndef SCULPTOR_H
 #define SCULPTOR_H
+#include <string>
 
-#include "voxel.h"
+struct Voxel {
+  float r,g,b; // Colors
+  float a;
+  bool show; // Included or not
+};
 
 class Sculptor {
-private:
+protected:
   Voxel ***v; // ponteiro para ponteiro para ponteiro do tipo struct Voxel
-
   int nx,ny,nz; // dimencoes x,y e z da matriz
   float r,g,b,a; // define o tom vermelho, verde e azul para cada voxel, e transparencia
+
 public:
   Sculptor(int _nx, int _ny, int _nz); //construtor responsavel por iniciar classe
-  ~Sculptor(); // destrutor da classe
   void setColor(float r, float g, float b, float alpha); 
   void putVoxel(int x, int y, int z); 
   void cutVoxel(int x, int y, int z); 
@@ -22,6 +26,8 @@ public:
   void putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz); // ativa um bloco de voxel em forma de elipsoide
   void cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz); // retira um bloco de voxel em forma de elipsoide
   void writeOFF(const char* filename);
+  
+  ~Sculptor(); // destrutor da classe
 };
 
 #endif
