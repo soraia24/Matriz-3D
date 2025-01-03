@@ -67,12 +67,13 @@ void Sculptor::setColor(float red, float green, float blue, float alpha){
 //definicao da funcao putVoxel
 void Sculptor::putVoxel(int x, int y, int z){
 
-    this->v[x][y][z].show = true;
-    this->v[x][y][z].r = this->r;
-    this->v[x][y][z].g = this->g;
-    this->v[x][y][z].b = this->b;
-    this->v[x][y][z].a = this->a;
-
+    if(x<nx && x >= 0 && y < ny && y >= 0 && z < nz && z>= 0){
+        this->v[x][y][z].show = true;
+        this->v[x][y][z].r = this->r;
+        this->v[x][y][z].g = this->g;
+        this->v[x][y][z].b = this->b;
+        this->v[x][y][z].a = this->a;
+    }
 }
 
 // definicao da funcao cutVoxel
