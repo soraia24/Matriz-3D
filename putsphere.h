@@ -2,6 +2,12 @@
 #define PUTSPHERE_H
 #include "figurageometrica.h"
 
+/**
+ * @class PutSphere
+ * 
+ *usada para representar uma esfera dentro do espaço 3D.
+ */
+
 
 class PutSphere : public FiguraGeometrica
 {

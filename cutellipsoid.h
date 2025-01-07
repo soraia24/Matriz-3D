@@ -2,6 +2,11 @@
 #ifndef CUTELLIPSOID_H
 #define CUTELLIPSOID_H
 #include "figurageometrica.h"
+/**
+ * @class CutEllipsoid
+ * 
+ *usada para excluir uma elipsoide dentro do espaço 3D.
+ */
 
 class CutEllipsoid : public FiguraGeometrica
 {

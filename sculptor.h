@@ -3,10 +3,17 @@
 #include <string>
 
 struct Voxel {
-  float r,g,b; // Colors
+  float r,g,b; 
   float a;
-  bool show; // Included or not
+  bool show; 
 };
+
+/**
+ * @class Sculptor
+ * @brief Representa criação de objetos 3D.
+ * 
+ * A classe Sculptor é uma ferramenta para criar e manipular modelos 3D usando *voxels. Ela permite definir cores, cortar e colocar voxels em várias formas geométricas (como cubos, esferas e elipsoides), e salvar o modelo em um formato de arquivo para *visualização ou uso posterior.
+ */
 
 class Sculptor {
 protected:

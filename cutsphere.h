@@ -2,6 +2,12 @@
 #define CUTSPHERE_H
 #include "figurageometrica.h"
 
+/**
+ * @class CutSphere
+ * 
+ *usada para excluir uma esfera dentro do espaço 3D.
+ */
+
 class CutSphere : public FiguraGeometrica
 {
     int xcenter, ycenter, zcenter, radius;

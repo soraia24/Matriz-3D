@@ -2,7 +2,12 @@
 #define PUTELLIPSOID_H
 #include "figurageometrica.h"
 
-
+/**
+ * @class PutEllipsoid
+ * 
+ *usada para desenhar uma elipsoide dentro do espaço 3D.
+ */
+ 
 class PutEllipsoid : public FiguraGeometrica
 {
     int xcenter, ycenter, zcenter, rx, ry, rz;

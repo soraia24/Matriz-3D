@@ -2,6 +2,11 @@
 #define PUTBOX_H
 #include "figurageometrica.h"
 
+/**
+ * @class PutBox
+ * 
+ *usada para desenhar um bloco retangular de voxels no espaço 3D. Ela é usada para ativar ou colocar múltiplos voxels dentro de uma caixa ou bloco definido por um conjunto de coordenadas
+ */
 
 class PutBox : public FiguraGeometrica
 {

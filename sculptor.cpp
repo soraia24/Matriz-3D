@@ -54,7 +54,13 @@ Sculptor::~Sculptor(){
 
 }
 
-// definicao das cores vermelho, verde e azul
+
+/**
+
+ * @brief setColor definicao das cores vermelho, verde e azul
+ * 
+ */
+
 void Sculptor::setColor(float red, float green, float blue, float alpha){
 
     this->r = red;
@@ -64,7 +70,7 @@ void Sculptor::setColor(float red, float green, float blue, float alpha){
 
 }
 
-//definicao da funcao putVoxel
+
 void Sculptor::putVoxel(int x, int y, int z){
 
     if(x<nx && x >= 0 && y < ny && y >= 0 && z < nz && z>= 0){

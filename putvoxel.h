@@ -2,6 +2,12 @@
 #define PUTVOXEL_H
 #include "figurageometrica.h"
 
+/**
+ * @class PutVoxel
+ * 
+ *usada para representar um único voxel no espaço tridimensional, com a capacidade de ser desenhado (através do método draw) em um "mundo 3D" modelado por Sculptor.
+ */
+
 
 class PutVoxel : public FiguraGeometrica
 {
