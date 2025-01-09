@@ -43,7 +43,8 @@ int main() {
     corte4.draw(flor);
     CutVoxel corte5(23, 20, 5);
     corte5.draw(flor);
-    CutVoxel corte6(21, 19, 5);
+    
+    CutSphere corte6(21, 19, 5, 1);
     corte6.draw(flor);
 
     CutVoxel corte7(27, 22, 5);
